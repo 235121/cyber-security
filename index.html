@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Login</title>
+</head>
+
+<body>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Segoe UI", Arial, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(to right, #003366, #00509e);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container {
+            width: 100%;
+            padding: 20px;
+        }
+
+        .header h1 {
+            padding-top: 20px;
+            padding-right: 2px;
+
+        }
+
+        .header {
+            font-size: 25px;
+            display: flex;
+            white-space: 20px;
+            gap: 50px;
+        }
+
+        img {
+            width: 25%;
+            height: auto;
+        }
+
+        .login-box {
+            background: #ffffff;
+            max-width: 400px;
+            margin: auto;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+        }
+
+        .login-box h1 {
+            text-align: center;
+            color: #003366;
+            margin-bottom: 5px;
+        }
+
+        .login-box h3 {
+            text-align: center;
+            color: #555;
+            margin-bottom: 25px;
+            font-weight: normal;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 6px;
+            color: #333;
+            font-weight: 600;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 18px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        input:focus {
+            outline: none;
+            border-color: #00509e;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background: #003366;
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #00509e;
+        }
+
+        .footer-text {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 12px;
+            color: #777;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 480px) {
+            .login-box {
+                padding: 20px;
+            }
+
+            .login-box h1 {
+                font-size: 20px;
+            }
+
+            .login-box h3 {
+                font-size: 14px;
+            }
+        }
+    </style>
+    <div class="container">
+        <div class="login-box">
+            <div class="header">
+                <img src="klncelogo.gif" alt="image-not found">
+                <h1>KLNCE</h1>
+            </div>
+
+            <form>
+                <label for="username">Username</label>
+                <input type="text" id="username" placeholder="Enter your username" required>
+
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter your password" required>
+
+                <button type="submit">Login</button>
+            </form>
+
+            <p class="footer-text">© 2026 ABC College. All Rights Reserved.</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
